@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Button from "./Button"
+import Button from "./Button";
+import Menu from  "./Menu";
 
 export default class CalculatorInterface extends Component{
   constructor(props){
@@ -93,7 +94,13 @@ export default class CalculatorInterface extends Component{
   render(){
 
     return(
+
+
+
       <div>{this.state.Screen}
+
+
+
       <br/>
         <br/>
         <Button update={this.updateScreen} text={1}/>
@@ -115,7 +122,9 @@ export default class CalculatorInterface extends Component{
         <Button update={this.updateScreen} text={0}/>
         <Button update={this.solve} text={'='} type={"opperator"}/>
         <Button update={this.updateScreen} text={'/'}/>
-
+        <br/>
+        <br/>
+          <Menu/>
       </div>
 
 
